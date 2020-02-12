@@ -1,0 +1,11 @@
+#directories
+.idea
+.vs
+node_modules
+
+#npm
+package-lock.json
+
+#etc
+yarn-error.log
+.DS_Store

@@ -1,0 +1,32 @@
+.apps-container
+  margin-bottom: 25px
+  display: flex
+  flex-wrap: wrap
+
+  &.is-table
+
+    .app
+      width: 33.33%
+      border-top: none
+
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3)
+        border-top: 1px solid $color-border
+
+      &:nth-child(3n-1)
+        border-left: none
+
+      &:nth-child(3n)
+        border-left: none
+
+  &.is-list
+    flex-direction: column
+    border: 1px solid $color-border
+
+    .app
+      border: none
+      border-bottom: 1px solid $color-border
+
+      &:last-child
+        border-bottom: none

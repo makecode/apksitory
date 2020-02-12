@@ -1,0 +1,24 @@
+header.header
+  div.container
+    div.header__wrap
+      div.header__left
+        a(href='#').logo
+          img(src=require('./../../media/images/logo-web.svg'))
+      div.header__right
+        nav.nav
+          ul.nav__list
+            li.nav__el
+              a(href='#').nav__link
+                span.icon.icon-apps
+                | Apps
+            li.nav__el
+              a(href='#').nav__link
+                span.icon.icon-games
+                | Games
+        div.search
+          form.search__form
+            div.search__field
+              input.input(type='text', placeholder='Search')
+            div.search__action
+              button.btn(type='submit')
+                span.icon.icon-search

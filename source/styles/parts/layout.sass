@@ -1,0 +1,26 @@
+.container
+  position: relative
+  width: 1060px
+  margin: 0 auto
+
+  +m($laptop)
+    width: 980px
+
+  +m($tablet)
+    width: 760px
+    padding: 0 20px
+
+  +m($mobile)
+    width: 100%
+
+.main
+  flex: 1 1 auto
+
+.footer
+  background-color: $bg-grey
+
+  &__wrap
+    padding: 35px 0
+    display: flex
+    flex-direction: row
+    justify-content: center

@@ -1,0 +1,77 @@
+.search
+  width: 232px
+  position: relative
+  cursor: text
+
+  &__form
+    display: flex
+
+  &__field
+    position: relative
+    width: 100%
+
+  .input
+    display: block
+    padding-left: 10px
+    padding-right: 20px
+    width: 100%
+    height: 34px
+    line-height: 34px
+    font-size: 15px
+    border: 1px solid $color-border
+    border-right: none
+    background-color: #ffffff
+    cursor: text
+
+    &::placeholder
+      color: $input-color
+
+  .btn
+    padding: 0
+    display: inline-block
+    width: 34px
+    height: 34px
+    line-height: 34px
+    color: #ffffff
+    background-color: $bg-green
+    transition: all .3s ease-in-out
+
+    &:hover
+      background-color: $bg-green-light
+
+  .icon
+    top: -2px
+    font-size: 16px
+
+  &.is-hero
+    width: 100%
+
+    .search__field
+      width: 100%
+
+    .search__icon
+      position: absolute
+      top: 50%
+      left: 15px
+      transform: translateY(-50%)
+
+    .input
+      padding-left: 45px
+      width: 100%
+      font-size: 16px
+      height: 50px
+      line-height: 50px
+      color: #424242
+      background-color: #ffffff
+
+      &::placeholder
+        color: $input-color
+
+    .btn
+      display: inline-block
+      width: 150px
+      height: 50px
+      line-height: 50px
+      font-size: 17px
+      font-weight: 500
+      color: #ffffff

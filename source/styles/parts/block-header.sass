@@ -1,0 +1,30 @@
+.block-header
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: baseline
+
+  &__title
+    margin-bottom: 9px
+    font-size: 20px
+    font-weight: 500
+    color: $text
+
+  &__more
+    color: $link
+
+  &__wrap
+    display: flex
+    align-items: center
+
+  &__right
+    position: relative
+    left: -6px
+
+  &__icon
+    display: flex
+    font-size: 26px
+    margin-right: 8px
+
+  &.with-border
+    border-bottom: 1px solid $color-border

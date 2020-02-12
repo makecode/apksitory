@@ -1,0 +1,32 @@
+.label-wrap
+  width: 42px
+  height: 42px
+  position: relative
+  background-color: transparent
+
+  &.is-red
+    .label
+      border-top-color: #ed5755
+
+  &.is-orange
+    .label
+      border-top-color: #f38f2e
+
+  &.is-yellow
+    .label
+      border-top-color: #f4cd38
+
+  .label
+    width: 0
+    height: 0
+    border-top: 42px solid #bdbdbd
+    border-bottom: 42px solid transparent
+    border-right: 42px solid transparent
+
+    span
+      position: absolute
+      top: 3px
+      left: 8px
+      color: #ffffff
+      display: block
+      font-weight: 500

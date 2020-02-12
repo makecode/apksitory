@@ -1,0 +1,22 @@
+.error-wrap
+  position: relative
+.error
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+  &__name
+    font-size: 104px
+    font-weight: 500
+    line-height: 82px
+
+    +m(768)
+      font-size: 80px
+    +m(480)
+      font-size: 60px
+
+  &__descr
+    margin-top: 20px
+    margin-bottom: 32px
+    font-size: 18px
