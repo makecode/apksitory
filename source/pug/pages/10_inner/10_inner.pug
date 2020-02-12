@@ -15,18 +15,19 @@ block main
       div.container
         div.section__wrap
           div.section__left
-            //div.search
-            //  form.search__form
-            //    div.search__field
-            //      span.search__icon
-            //        i.icon.icon-search
-            //      input.input(type='text', placeholder='Search here')
-            //    div.search__action
-            //      button.btn(type='submit')
-            //        span Search
+            div.search.is-big
+              form.search__form
+                div.search__field
+                  span.search__icon
+                    i.icon.icon-search
+                  input.input(type='text')
+                div.search__action
+                  button.btn(type='submit')
+                    span Search
             div.banner
               a.banner__link(href='#' target='_blank')
                 img.banner__img(src=require('../../../media/images/banner.png'))
+            div.results 50 search results found.
             div.apps-big
               ul.apps-big__List
                 li.apps-big__el

@@ -1,0 +1,49 @@
+.apps-big
+
+  &__el
+    border-bottom: 1px solid $color-border
+
+  &__more
+    margin: 20px 0
+    text-align: center
+
+.app-big
+  padding: 15px 15px 15px 0
+  position: relative
+  display: flex
+  width: 100%
+  height: 150px
+  background-color: #ffffff
+  transition: all .3s ease-in-out
+  box-sizing: border-box
+  cursor: pointer
+
+  &:hover
+    background-color: #fafafa
+
+  &__left
+    margin-right: 30px
+
+  &__right
+    width: calc(100% - 150px)
+
+  &__name
+    display: block
+    margin-bottom: 6px
+    font-size: 20px
+    font-weight: 500
+    color: $text
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+
+  &__dev
+    margin-bottom: 14px
+    display: inline-block
+    font-size: 13px
+    color: $text-light
+    a
+      margin-left: 3px
+
+  .stars
+    margin-bottom: 8px

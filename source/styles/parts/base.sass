@@ -62,31 +62,6 @@ input[type='button']
     margin-bottom: 30px
     font-size: 16px
 
-.nav-footer
-  display: flex
-  color: $text-grey
-
-  &__el
-    padding-right: 27px
-    position: relative
-    &:after
-      position: absolute
-      content: ''
-      top: 4px
-      right: 13px
-      width: 1px
-      height: 13px
-      background-color: #90939f
-
-    &:last-child
-      &:after
-        display: none
-
-  &__link
-    color: $text-grey
-    font-size: 13px
-    font-weight: 300
-
 .information
 
   ul
@@ -130,35 +105,6 @@ input[type='button']
     display: flex
     border-top: 1px solid $color-border
 
-.popular
-  display: flex
-
-  &__list
-    margin-left: 4px
-    display: flex
-
-  &__el
-    padding-right: 15px
-    position: relative
-    &:after
-      position: absolute
-      content: ''
-      top: 4px
-      right: 7px
-      width: 1px
-      height: 13px
-      background-color: #616161
-
-    &:last-child
-      &:after
-        display: none
-
-  &__link
-    color: $text
-    font-size: 13px
-    &:hover
-      color: $link
-
 .apps
   margin-bottom: 24px
   display: flex
@@ -168,7 +114,6 @@ input[type='button']
     width: 33.33%
 
 #describe
-  margin-top: 20px
   line-height: 20px
   height: 200px
   overflow: hidden
@@ -216,18 +161,15 @@ input[type='button']
   padding-bottom: 20px
   border-bottom: 1px solid $color-border
 
-  h2
-    margin-bottom: 10px
-    font-size: 20px
-    font-weight: 500
-
 .tags
   &__link
     a
       margin-right: 10px
       padding: 0 15px
+      min-width: 88px
       height: 30px
       line-height: 30px
+      text-align: center
       color: $link
       border: 1px solid $link
 
@@ -253,123 +195,6 @@ input[type='button']
   top: 1px
   color: #f4cd38
   font-size: 13px
-
-
-
-.games
-  display: flex
-  flex-direction: row
-  flex-wrap: wrap
-  .game
-    width: 16.6%
-
-.game
-  width: 100%
-  display: flex
-  flex-direction: column
-  text-align: center
-  border: 1px solid transparent
-  background-color: #ffffff
-  transition: all .3s ease-in-out
-  box-sizing: border-box
-  &:hover
-    background-color: #fafafa
-    border-color: $color-border
-
-  &__link
-    padding-top: 20px
-    padding-bottom: 7px
-    display: block
-    width: auto
-    text-align: center
-
-  &__img
-    width: 100px
-
-  &__name
-    display: block
-    font-size: 15px
-    font-weight: 500
-    color: $text
-    overflow: hidden
-    text-overflow: ellipsis
-    white-space: nowrap
-    &:hover
-      color: $link
-
-  &__bottom
-    padding: 0 25px 10px 25px
-
-  .stars
-    margin-top: 4px
-    margin-bottom: 8px
-    left: 15px
-
-.table
-  width: 100%
-
-  thead
-    tr
-      height: 46px
-      line-height: 46px
-  tr
-    height: 30px
-    line-height: 30px
-    border: 1px solid $color-border
-
-  .rating
-    display: none
-
-    +m(1024)
-      display: table-row
-
-    .vote
-      margin-left: 3px
-      position: relative
-      top: -2px
-
-  td
-    padding: 0 15px
-    width: 70%
-    font-size: 13px
-
-    &:first-child
-      width: 30%
-      padding: 0 10px
-      font-weight: 500
-      background-color: #fafafa
-      text-align: center
-    a
-      color: $text
-      .icon
-        margin-right: 3px
-
-.rate
-  text-align: center
-  height: 270px
-  box-sizing: border-box
-  border: 1px solid $color-border
-
-  &__title
-    display: block
-    height: 46px
-    line-height: 46px
-    font-size: 16px
-    font-weight: 500
-    background-color: #fafafa
-
-  &__content
-    height: calc(100% - 46px)
-    display: flex
-    flex-direction: column
-    justify-content: center
-
-  &__sum
-    font-size: 68px
-
-    span
-      font-size: 24px
-      color: $text-light
 
 .download
   margin-bottom: 25px
@@ -407,57 +232,9 @@ input[type='button']
   border: 1px solid $color-border
   background-color: #fff
   box-sizing: border-box
-  &:hover
-    background-color: #fafafa
-
-.apps-big
-
-  &__el
-    border-bottom: 1px solid $color-border
-  &__more
-    margin: 20px 0
-    text-align: center
-
-.app-big
-  padding: 15px 15px 15px 0
-  position: relative
-  display: flex
-  width: 100%
-  height: 150px
-  background-color: #ffffff
-  transition: all .3s ease-in-out
-  box-sizing: border-box
-  cursor: pointer
 
   &:hover
     background-color: #fafafa
-
-  &__left
-    margin-right: 30px
-
-  &__right
-    width: calc(100% - 150px)
-
-  &__name
-    display: block
-    margin-bottom: 6px
-    font-size: 20px
-    font-weight: 500
-    color: $text
-    overflow: hidden
-    text-overflow: ellipsis
-    white-space: nowrap
-
-  &__dev
-    margin-bottom: 14px
-    display: inline-block
-    font-size: 13px
-    color: $text-light
-    a
-      margin-left: 3px
-
-  .stars
-    margin-bottom: 8px
 
 .btn-transparent
   display: inline-block
@@ -491,6 +268,66 @@ input[type='button']
     background-color: $bg-green
     a
       color: #ffffff
+
+.technical-info
+  margin-bottom: 20px
+
+  &__wrap
+    width: 100%
+    display: flex
+
+  &__left
+    margin-right: 15px
+    width: 30.6%
+
+    +m(768)
+      display: none
+
+  &__right
+    width: 69%
+    +m(768)
+      width: 100%
+
+.raiting
+
+  &__total
+    display: block
+    color: $link
+
+.wrap-container
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+
+.item
+  margin-bottom: 15px
+  display: flex
+  flex-direction: row
+  align-items: center
+  width: 100%
+
+  &__left
+    display: flex
+    width: 70%
+
+  &__right
+    width: 30%
+
+  &__text
+    margin-left: 30px
+
+.results
+  padding-bottom: 5px
+  font-size: 15px
+  color: $text-light
+  border-bottom: 1px solid $color-border
+
+.preview
+  margin-bottom: 26px
+
+.banner
+  margin-bottom: 15px
 
 .bold
   font-weight: 500

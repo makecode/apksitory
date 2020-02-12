@@ -1,0 +1,51 @@
+.games
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+
+  .game
+    width: 16.6%
+
+.game
+  margin-bottom: 5px
+  width: 100%
+  display: flex
+  flex-direction: column
+  text-align: center
+  border: 1px solid transparent
+  background-color: #ffffff
+  transition: all .3s ease-in-out
+  box-sizing: border-box
+
+  &:hover
+    background-color: #fafafa
+    border-color: $color-border
+
+  &__link
+    padding-top: 20px
+    padding-bottom: 7px
+    display: block
+    width: auto
+    text-align: center
+
+  &__img
+    width: 100px
+
+  &__name
+    display: block
+    font-size: 15px
+    font-weight: 500
+    color: $text
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+    &:hover
+      color: $link
+
+  &__bottom
+    padding: 0 25px 10px 25px
+
+  .stars
+    margin-top: 4px
+    margin-bottom: 8px
+    left: 15px

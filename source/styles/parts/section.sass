@@ -11,7 +11,7 @@
       flex-direction: column
 
   &__left
-    width: calc(100% - 300px)
+    width: 100%
     margin-right: 28px
 
     +m(1024)
@@ -19,7 +19,7 @@
       margin-right: 0
 
   &__right
-    width: 300px
+    min-width: 300px
 
     +m(1024)
       width: 100%
@@ -29,6 +29,25 @@
 
   &.is-main
     padding: 50px 0 50px
+
+  &.is-1-inner
+    padding-top: 0
+    h2
+      margin-bottom: 10px
+      font-size: 20px
+      font-weight: 500
+  &.is-2-inner
+    padding-top: 0
+    h1
+      font-weight: 400
+      margin-bottom: 5px
+  &.is-9-inner,
+  &.is-10-inner
+    padding-top: 0
+
+  &.is-10-inner
+    .search
+      margin-bottom: 20px
 
 
   //&__title

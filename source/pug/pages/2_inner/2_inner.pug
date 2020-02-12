@@ -7,12 +7,23 @@ block main
       div.container
         ul.breadcrumbs
           li.breadcrumbs__el
-            a.breadcrumbs__link(href='#') Home
+            a.breadcrumbs__link(href='#')
+              span.icon.icon-breadcumb-home
           li.breadcrumbs__el
             a.breadcrumbs__link(href='#') Popular Games In Last 24 Hours
     section.section.is-2-inner
       div.container
-        h1.section__title Popular Games In Last 24 Hours
+        div.wrap-container
+          h1.section__title Popular Games In Last 24 Hours
+          div.sorting
+            span Sort by:
+            ul.sorting__list
+              li.sorting__el
+                a(href='#') Downloads
+              li.sorting__el.is-active
+                a(href='#') Latest Update
+              li.sorting__el
+                a(href='#') Rating
         div.games
           div.game
             div.game__wrap

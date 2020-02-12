@@ -1,0 +1,44 @@
+.table
+  width: 100%
+
+  thead
+    tr
+      height: 46px
+
+  tr
+    height: 32px
+    line-height: 30px
+    border: 1px solid $color-border
+
+  .rating
+    display: none
+
+    +m(1024)
+      display: table-row
+
+    .vote
+      margin-left: 3px
+      position: relative
+      top: -2px
+
+  td
+    padding: 0 15px
+    width: calc(100% - 130px)
+    font-size: 13px
+
+    &:first-child
+      width: 130px
+      padding: 0 10px
+      font-weight: 500
+      background-color: #fafafa
+      text-align: center
+      border-right: 1px solid $color-border
+    a
+      color: $text
+      .icon
+        margin-right: 3px
+    img
+      margin-right: 8px
+      position: relative
+      top: 8px
+      width: 26px

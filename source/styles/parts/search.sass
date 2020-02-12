@@ -43,11 +43,8 @@
     top: -2px
     font-size: 16px
 
-  &.is-hero
+  &.is-big
     width: 100%
-
-    .search__field
-      width: 100%
 
     .search__icon
       position: absolute
@@ -57,12 +54,10 @@
 
     .input
       padding-left: 45px
-      width: 100%
       font-size: 16px
       height: 50px
       line-height: 50px
       color: #424242
-      background-color: #ffffff
 
       &::placeholder
         color: $input-color
@@ -75,3 +70,43 @@
       font-size: 17px
       font-weight: 500
       color: #ffffff
+
+  &.is-small
+    position: relative
+    width: 220px
+
+    &:hover
+      .search__input
+        padding: 0 10px
+        width: calc(100% - 30px)
+
+      .search__btn
+        background-color: $bg-green
+
+    .search__input
+      padding: 0
+      width: 0
+      height: 30px
+      line-height: 30px
+      background-color: #ffffff
+
+      &:focus
+        padding: 0 10px
+        width: calc(100% - 30px)
+
+      &:focus ~ .search__btn
+        background-color: $bg-green
+
+    .search__btn
+      padding: 0
+      width: 30px
+      height: 30px
+      line-height: 36px
+      border: none
+      background-color: transparent
+      box-sizing: border-box
+      cursor: pointer
+
+      .icon
+        color: #fff
+        font-size: 18px

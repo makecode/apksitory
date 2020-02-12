@@ -21,7 +21,7 @@ block main
           div.section__left
             div.product
               div.product__left
-                img.banner__img(src=require('../../../media/images/product.png'))
+                img.product__img(src=require('../../../media/images/product.png'))
               div.product__right
                 h1.product__title HAGO - Play With New Friends
                 span.product__rating <span class='green'>3.4.9</span> for Android
@@ -60,61 +60,67 @@ block main
             div.comments
               img(src=require('../../../media/images/comments.png'))
             div.technical-info
+              div.technical-info__wrap
+                dic.technical-info__left
+                  div.rate
+                    span.rate__title Rating
+                    div.rate__content
+                      span.rate__sum 4.3
+                        span /5
+                      div.raiting
+                        div.rateit(data-rateit-value='4.3', data-rateit-resetable='false')
+                        span.raiting__total (2,231 total votes)
+                div.technical-info__right
+                  table.table
+                    thead
+                      tr
+                        td Name
+                        td
+                          img(src=require('../../../media/images/product.png'))
+                          | HAGO - Play With New Friends
+                    tbody
+                      tr.rating
+                        td Rating
+                        td
+                          span.rateit(data-rateit-value='4.3', data-rateit-resetable='false')
+                          span.vote 4.3
 
-            div.rate
-              span.rate__title Rating
-              div.rate__content
-                span.rate__sum 4.3
-                  span /5
-                div.raiting
-                  div.rateit(data-rateit-value='4.3', data-rateit-resetable='false')
-                  span.raiting__total (2,231 total votes)
-
-            table.table
-              thead
-                tr
-                  td Name
-                  td HAGO - Play With New Friends
-              tbody
-                tr.rating
-                  td Rating
-                  td
-                    span.rateit(data-rateit-value='4.3', data-rateit-resetable='false')
-                    span.vote 4.3
-
-                tr
-                  td Price
-                  td Free
-                tr
-                  td Version
-                  td com.twitter.android_8.7.0-release.81
-                tr
-                  td Requires
-                  td Android 4.3+
-                tr
-                  td Updated
-                  td 2019-10-31
-                tr
-                  td Developer
-                  td Twitter, Inc.
-                tr
-                  td Name of Package
-                  td com.twitter.android
-                tr
-                  td Get it on
-                  td
-                    a(href='#')
-                     span.icon.icon-googleplay
-                     span Google Play
+                      tr
+                        td Price
+                        td Free
+                      tr
+                        td Version
+                        td com.twitter.android_8.7.0-release.81
+                      tr
+                        td Requires
+                        td Android 4.3+
+                      tr
+                        td Updated
+                        td 2019-10-31
+                      tr
+                        td Developer
+                        td Twitter, Inc.
+                      tr
+                        td Name of Package
+                        td com.twitter.android
+                      tr
+                        td Get it on
+                        td
+                          a(href='#')
+                           span.icon.icon-googleplay
+                           span Google Play
 
             a(href='#').download.googleplay
               img(src=require('../../../media/images/icon-google-play.png'))
 
-            a(href='#').download
-              i.icon.icon-download
-              span.bold Download APK
-              span (13.1MB)
+            //a(href='#').download
+            //  i.icon.icon-download
+            //  span.bold Download APK
+            //  span (13.1MB)
 
+            div.banner
+              a.banner__link(href='#' target='_blank')
+                img.banner__img(src=require('../../../media/images/banner_2.png'))
 
             div.block-header
               div.block-header__left
@@ -196,12 +202,12 @@ block main
                   div.down
                     a(href='#') Download APK
 
-              div.block-header
-                div.block-header__left
-                  a.block-header__link(href='#')
-                    h2.block-header__title More From HAGO - Play With New Friends
-                div.block-header__right
-                  a.block-header__link(href='#') More &raquo;
+            div.block-header
+              div.block-header__left
+                a.block-header__link(href='#')
+                  h2.block-header__title More From HAGO - Play With New Friends
+              div.block-header__right
+                a.block-header__link(href='#') More &raquo;
             div.apps-container.is-table
               div.app
                 div.app__left

@@ -1,0 +1,24 @@
+.nav-footer
+  display: flex
+  color: $text-grey
+
+  &__el
+    padding-right: 27px
+    position: relative
+    &:after
+      position: absolute
+      content: ''
+      top: 4px
+      right: 13px
+      width: 1px
+      height: 13px
+      background-color: #90939f
+
+    &:last-child
+      &:after
+        display: none
+
+  &__link
+    color: $text-grey
+    font-size: 13px
+    font-weight: 300

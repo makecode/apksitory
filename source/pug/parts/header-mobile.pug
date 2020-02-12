@@ -10,10 +10,9 @@ header.header-mobile
         a(href='#').logo
           img(src=require('./../../media/images/logo-mob.svg'))
       div.header-mobile__right
-        div.search
-          form.search__form
-            div.search__field
-              input.input(type='text', placeholder='Search')
-            div.search__action
-              button.btn(type='submit')
-                span.icon.icon-search
+        div.search.is-small
+          form.search__form(action='#')
+            input.search__input(type='text' placeholder='Search')
+            button.search__btn(type='submit')
+              span.icon.icon-search
+
