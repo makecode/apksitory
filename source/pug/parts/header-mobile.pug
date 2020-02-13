@@ -1,18 +1,20 @@
-header.header-mobile
-  div.container
-    div.header-mobile__wrap
-      div.header-mobile__left
-        #hamburger.hamburger
-          span.hamburger__el
-          span.hamburger__el
-          span.hamburger__el
-      div.header-mobile__center
-        a(href='#').logo
-          img(src=require('./../../media/images/logo-mob.svg'))
-      div.header-mobile__right
-        div.search.is-small
-          form.search__form(action='#')
-            input.search__input(type='text' placeholder='Search')
-            button.search__btn(type='submit')
-              span.icon.icon-search
+header.header-mobile.container#header-mobile
+  #hamburger.hamburger
+    span.hamburger__el
+    span.hamburger__el
+    span.hamburger__el
+  a(href='#').logo
+    img(src=require('./../../media/images/logo-mob.svg'))
+  span.search-btn#btn-search-mobile
+    span.icon.icon-search
+    span.icon.icon-cross
+      svg(viewbox='0 0 1024 1024')
+        path(fill='#ffffff' d='M829.339 149.328q19.479 0 32.407 12.928t12.928 32.407q0 19.125-13.104 32.229l-285.463 285.108 285.463 285.108q13.104 13.104 13.104 32.229 0 19.479-12.928 32.407t-32.407 12.928q-19.125 0-32.229-13.104l-285.108-285.463-285.108 285.463q-13.104 13.104-32.229 13.104-19.479 0-32.407-12.928t-12.928-32.407q0-19.125 13.104-32.229l285.463-285.108-285.463-285.108q-13.104-13.104-13.104-32.229 0-19.479 12.928-32.407t32.407-12.928q19.125 0 32.229 13.104l285.108 285.463 285.108-285.463q13.104-13.104 32.229-13.104z')
 
+div.search.is-mobile#search-mobile
+  form.search__form
+    div.search__field
+      input.input(type='text', placeholder='Search')
+    div.search__action
+      span.btn
+        span.icon.icon-search

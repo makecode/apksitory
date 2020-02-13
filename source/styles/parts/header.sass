@@ -1,6 +1,8 @@
 .header
   background-color: #ffffff
   border-bottom: 1px solid $color-border
+  +m($mobile)
+    display: none
 
   &__wrap
     position: relative
@@ -17,31 +19,3 @@
 
 .logo
   width: 147px
-
-.header-mobile
-  background-color: $bg-green
-  display: none
-
-  +m(768)
-    display: block
-
-  &__wrap
-    position: relative
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-    align-items: center
-    height: 40px
-
-  &__left
-
-  .hamburger
-    display: none
-    position: absolute
-    left: 0
-    top: 50%
-    transform: translateY(-50%)
-
-    +m(768)
-      display: inline-block
-

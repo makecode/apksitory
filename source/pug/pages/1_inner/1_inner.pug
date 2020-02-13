@@ -15,6 +15,7 @@ block main
             a.breadcrumbs__link(href='#') Social
           li.breadcrumbs__el
             a.breadcrumbs__link(href='#') HAGO - Play With New Friends
+
     section.section.is-1-inner
       div.container
         div.section__wrap
@@ -31,10 +32,10 @@ block main
                 img.banner__img(src=require('../../../media/images/banner.png'))
             div.preview
               img(src=require('../../../media/images/preview.png'))
-            div#describe
-              div.description
+            div.describe#describe
+              div.describe__content
                 h2 The description of HAGO - Play With New Friends
-                div.content
+                div
                   p With over 100 Million Downloads Hago has received a lot of love from the players around the globe. Download and enjoy Games, Channels, Voice Chatting and have unlimited fun. Hago can be your getaway for all social and casual needs.
                   span 80+ Games:
                   p 180 seconds of endless fun and over 80+ games to play, this will be your new addiction. Ready to get hooked?
@@ -44,10 +45,13 @@ block main
                     span 80+ Games:
                     p 180 seconds of endless fun and over 80+ games to play, this will be your new addiction. Ready to get hooked?
                     span Live Battles (PVP):
-            div.showmore-trigger
-              div.show-more-end
-              span Show More
-              span Show Less
+
+              div.describe__controls
+                div.describe__button#describe-button
+                  span.describe__button-text Show More
+
+
+
             div.changelog
               h2 HAGO - Play With New Friends 3.4.9 Update
               span 2019-10-10
@@ -110,13 +114,13 @@ block main
                            span.icon.icon-googleplay
                            span Google Play
 
-            a(href='#').download.googleplay
+            a(href='#').btn-download.googleplay
               img(src=require('../../../media/images/icon-google-play.png'))
 
-            //a(href='#').download
-            //  i.icon.icon-download
-            //  span.bold Download APK
-            //  span (13.1MB)
+              //a(href='#').btn-download
+              //  i.icon.icon-download
+              //  span.bold Download APK
+              //  span (13.1MB)
 
             div.banner
               a.banner__link(href='#' target='_blank')
@@ -477,3 +481,5 @@ block main
                     span.app__view Tools
                     div.down
                       a(href='#') Download APK
+                div.apps-container__more
+                  a.btn-transparent More &raquo;

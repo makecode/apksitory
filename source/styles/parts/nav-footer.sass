@@ -1,10 +1,19 @@
 .nav-footer
   display: flex
+  flex-wrap: wrap
   color: $text-grey
+  +m($mobile)
+    justify-content: center
 
   &__el
     padding-right: 27px
     position: relative
+    +m($mobile)
+      margin-bottom: 5px
+
+      &:last-child
+        margin-bottom: 0
+
     &:after
       position: absolute
       content: ''

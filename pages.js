@@ -5,7 +5,8 @@ const pages = [
   '9_inner',
   '10_inner',
   'error',
-  'terms'
+  'terms',
+  'preloader'
 ];
 
 module.exports = pages;

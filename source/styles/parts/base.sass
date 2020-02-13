@@ -41,63 +41,6 @@ input[type='button']
   font-weight: 300
   color: $text-grey
 
-.hero
-  padding-top: 65px
-  padding-bottom: 20px
-  text-align: center
-  background: url('../media/images/hero-bg.png')
-  background-size: cover
-
-  &__wrap
-    display: inline-block
-    text-align: center
-    width: 700px
-
-  &__title
-    font-size: 46px
-    font-weight: 400
-
-  &__descr
-    margin-top: 15px
-    margin-bottom: 30px
-    font-size: 16px
-
-.information
-
-  ul
-    margin-bottom: 15px
-
-    li
-      position: relative
-      padding-left: 12px
-      padding-bottom: 2px
-      font-size: 13px
-      font-weight: 300
-
-      &:after
-        position: absolute
-        top: 8px
-        left: 0
-        content: ""
-        width: 3px
-        height: 3px
-        background-color: $text
-
-  p
-    margin-bottom: 25px
-    font-size: 13px
-    font-weight: 300
-
-  span
-    font-size: 18px
-    font-weight: 600
-    line-height: 1.8
-
-  h1
-    font-size: 28px
-    font-weight: 300
-    margin-bottom: 20px
-
 .pre-footer
 
   &__wrap
@@ -105,73 +48,10 @@ input[type='button']
     display: flex
     border-top: 1px solid $color-border
 
-.apps
-  margin-bottom: 24px
-  display: flex
-  flex-wrap: wrap
-
-  .app
-    width: 33.33%
-
-#describe
-  line-height: 20px
-  height: 200px
-  overflow: hidden
-  position: relative
-
-.showmore-trigger
-  position: relative
-  margin-bottom: 20px
-  span
-    cursor: pointer
-    line-height: 30px
-    padding-right: 15px
-    height: 30px
-    display: inline-block
-    color: #00A6ED
-    text-decoration: none
-    background: url(https://static.apkpure.com/www/static/imgs/read-more.png) no-repeat right 13px
-
-.show-more-end
-  background: linear-gradient(to bottom, rgba(255,255,255,0), #fff)
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#00ffffff',EndColorStr='#ffffff')
-  top: -30px
-  height: 30px
-  left: 0
-  position: absolute
-  width: 100%
-
-.description
-  //overflow: hidden
-  //height: 200px
-  //margin-top: 20px
-  //margin-bottom: 20px
-  //padding-bottom: 20px
-  //border-bottom: 1px solid $color-border
-
-  h2
-    margin-bottom: 10px
-    font-size: 20px
-    font-weight: 500
-  p
-    margin-bottom: 15px
-
 .changelog
   margin-bottom: 20px
   padding-bottom: 20px
   border-bottom: 1px solid $color-border
-
-.tags
-  &__link
-    a
-      margin-right: 10px
-      padding: 0 15px
-      min-width: 88px
-      height: 30px
-      line-height: 30px
-      text-align: center
-      color: $link
-      border: 1px solid $link
 
 .stars
   margin-bottom: 5px
@@ -196,98 +76,6 @@ input[type='button']
   color: #f4cd38
   font-size: 13px
 
-.download
-  margin-bottom: 25px
-  display: flex
-  align-items: center
-  justify-content: center
-  height: 46px
-  line-height: 46px
-  color: #ffffff
-  font-size: 16px
-  text-align: center
-  background-color: $bg-green
-
-  &:hover
-    background-color: $bg-green-light
-
-  &.googleplay
-    background-color: #000000
-
-    &:hover
-      background-color: #343434
-
-  .icon
-    margin-right: 10px
-
-  .bold
-    margin-right: 5px
-
-.games-more
-  width: 150px
-  height: 34px
-  line-height: 34px
-  color: $link
-  text-align: center
-  border: 1px solid $color-border
-  background-color: #fff
-  box-sizing: border-box
-
-  &:hover
-    background-color: #fafafa
-
-.btn-transparent
-  display: inline-block
-  font-size: 13px
-  width: 150px
-  height: 34px
-  line-height: 33px
-  color: $link
-  text-align: center
-  border: 1px solid $color-border
-  background-color: transparent
-  transition: all 0.3s ease-in-out
-  cursor: pointer
-  &:hover
-    background-color: #fafafa
-
-.btn-download
-  width: 130px
-  height: 26px
-  line-height: 26px
-  font-size: 13px
-  text-align: center
-  color: $bg-green
-  background-color: #ffffff
-  border: 1px solid $bg-green
-  transition: all .3s ease-in-out
-  a
-    color: $bg-green
-
-  &:hover
-    background-color: $bg-green
-    a
-      color: #ffffff
-
-.technical-info
-  margin-bottom: 20px
-
-  &__wrap
-    width: 100%
-    display: flex
-
-  &__left
-    margin-right: 15px
-    width: 30.6%
-
-    +m(768)
-      display: none
-
-  &__right
-    width: 69%
-    +m(768)
-      width: 100%
-
 .raiting
 
   &__total
@@ -299,6 +87,9 @@ input[type='button']
   flex-direction: row
   justify-content: space-between
   align-items: center
+  +m($tablet)
+    flex-direction: column
+    align-items: start
 
 .item
   margin-bottom: 15px
@@ -306,16 +97,31 @@ input[type='button']
   flex-direction: row
   align-items: center
   width: 100%
+  +m($mobile)
+    flex-direction: column
+    align-items: start
 
   &__left
     display: flex
     width: 70%
+    +m($mobile)
+      margin-bottom: 10px
+      width: 100%
 
   &__right
     width: 30%
+    +m($mobile)
+      width: 100%
 
   &__text
     margin-left: 30px
+
+  &__title
+    font-size: 22px
+    font-weight: 500
+
+  &__descr
+    color: $text-light
 
 .results
   padding-bottom: 5px
