@@ -1,4 +1,5 @@
 import './../base';
+import './../app';
 
 $( document ).ready(function() {
   const text = 'Push me';
