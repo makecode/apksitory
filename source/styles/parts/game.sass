@@ -9,6 +9,7 @@
 
   .game
     width: 16.6%
+
     +m($mobile)
       width: 33.3%
 
@@ -34,10 +35,8 @@
     width: auto
     text-align: center
 
-  &__img
-    width: 100px
-
   &__name
+    padding-bottom: 25px
     display: block
     font-size: 15px
     font-weight: 500
@@ -49,9 +48,15 @@
       color: $link
 
   &__bottom
-    padding: 0 25px 10px 25px
+    padding: 0 25px 13px 25px
+    position: relative
+
+  &__download
+    +m($mobile)
+      display: none
 
   .stars
-    margin-top: 4px
-    margin-bottom: 8px
-    left: 15px
+    position: absolute
+    left: 50%
+    top: 25px
+    transform: translateX(-71%)

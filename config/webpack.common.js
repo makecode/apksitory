@@ -64,8 +64,9 @@ const common = {
     inject: 'body'
   })).concat([
     new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery'
+      $: 'jquery/dist/jquery.min.js',
+      jQuery: 'jquery/dist/jquery.min.js',
+      'window.jQuery': 'jquery/dist/jquery.min.js'
     })
   ])
 };

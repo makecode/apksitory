@@ -58,23 +58,23 @@ input[type='button']
   background: url('../media/images/star-empty.png') repeat-x
   height: 12px
   width: 60px
-  clear: both
-  direction: ltr
+  //clear: both
+  //direction: ltr
   position: relative
 
-.stars span.score
-  display: block
-  background: url('../media/images/star.png') repeat-x
-  height: 12px
-  width: 60px
+  &__score
+    display: block
+    background: url('../media/images/star.png') repeat-x
+    height: 12px
+    width: 60px
 
-.stars span.star
-  position: absolute
-  left: 65px
-  line-height: 12px
-  top: 1px
-  color: #f4cd38
-  font-size: 13px
+  &__el
+    position: absolute
+    left: 65px
+    line-height: 12px
+    top: 1px
+    color: #f4cd38
+    font-size: 13px
 
 .raiting
 
@@ -144,8 +144,5 @@ input[type='button']
 
 .green
   color: #66bb6a
-
-
-
 
 

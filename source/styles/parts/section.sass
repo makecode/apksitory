@@ -1,5 +1,5 @@
 .section
-  padding: 30px 0 50px
+  padding-bottom: 50px
 
   &__wrap
     display: flex
@@ -26,28 +26,37 @@
       width: 100%
 
   &__title
+    margin-bottom: 15px
     font-size: 26px
+    font-weight: 400
+    +m($mobile)
+      font-size: 23px
+
+    &.with-border
+      padding-bottom: 10px
+      border-bottom: 1px solid $color-border
 
   &.is-main
     padding: 50px 0 50px
 
   &.is-1-inner
-    padding-top: 0
     .section__left
       h2
         margin-bottom: 10px
         font-size: 20px
         font-weight: 500
-  &.is-2-inner
-    padding-top: 0
-    h1
-      font-weight: 400
-      margin-bottom: 5px
 
-  &.is-terms,
-  &.is-9-inner,
-  &.is-10-inner
-    padding-top: 0
+  &.is-2-inner
+    padding-bottom: 50px
+
+    .section__title
+      margin-bottom: 5px
+      +m($tablet)
+        margin-bottom: 10px
+
+    .sorting
+      position: relative
+      top: -4pxcontainer
 
   &.is-10-inner
     .search

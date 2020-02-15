@@ -22,7 +22,7 @@ block main
           div.section__left
             div.product
               div.product__left
-                img.product__img(src=require('../../../media/images/product.png'))
+                img.lazy(src=require('../../../media/images/loading.gif') srcset='https://lh3.googleusercontent.com/4gbVU7H5-a_qzo0lrj_goQyorGUIFNo7oBzi2zUEqNIldoja15i01Si4tbCHceySsxlv=s100-rw 1x, https://lh3.googleusercontent.com/4gbVU7H5-a_qzo0lrj_goQyorGUIFNo7oBzi2zUEqNIldoja15i01Si4tbCHceySsxlv=s200-rw 2x')
               div.product__right
                 h1.product__title HAGO - Play With New Friends
                 span.product__rating <span class='green'>3.4.9</span> for Android
@@ -129,80 +129,7 @@ block main
                   h2.block-header__title Similar to HAGO - Play With New Friends
               div.block-header__right
                 a.block-header__link(href='#') More &raquo;
-            div.apps-container.is-table
-              div.app
-                div.app__left
-                  a(href='#')
-                    img(src=require('../../../media/images/icon-app.png'))
-                div.app__right
-                  a(href='#').app__name Ludo King
-                  div.stars
-                    span.score(title='Tales of Wind average rating 7.9' style='width:79%')
-                    span.star 7.9
-                  span.app__view Action
-                  div.down
-                    a(href='#') Download APK
-              div.app
-                div.app__left
-                  a(href='#')
-                    img(src=require('../../../media/images/icon-app.png'))
-                div.app__right
-                  a(href='#').app__name Sand Balls
-                  div.stars
-                    span.score(title='Tales of Wind average rating 6.9' style='width:69%')
-                    span.star 6.9
-                  span.app__view Action
-                  div.down
-                    a(href='#') Download APK
-              div.app
-                div.app__left
-                  a(href='#')
-                    img(src=require('../../../media/images/icon-app.png'))
-                div.app__right
-                  a(href='#').app__name Anti-Terrorism Commando Mission 2019
-                  div.stars
-                    span.score(title='Tales of Wind average rating 7.9' style='width:79%')
-                    span.star 7.9
-                  span.app__view Action
-                  div.down
-                    a(href='#') Download APK
-              div.app
-                div.app__left
-                  a(href='#')
-                    img(src=require('../../../media/images/icon-app.png'))
-                div.app__right
-                  a(href='#').app__name Sand Balls
-                  div.stars
-                    span.score(title='Tales of Wind average rating 6.9' style='width:69%')
-                    span.star 6.9
-                  span.app__view Action
-                  div.down
-                    a(href='#') Download APK
-              div.app
-                div.app__left
-                  a(href='#')
-                    img(src=require('../../../media/images/icon-app.png'))
-                div.app__right
-                  a(href='#').app__name Ludo King
-                  div.stars
-                    span.score(title='Tales of Wind average rating 7.9' style='width:79%')
-                    span.star 7.9
-                  span.app__view Action
-                  div.down
-                    a(href='#') Download APK
-              div.app
-                div.app__left
-                  a(href='#')
-                    img(src=require('../../../media/images/icon-app.png'))
-                div.app__right
-                  a(href='#').app__name Ludo King
-                  div.stars
-                    span.score(title='Tales of Wind average rating 7.9' style='width:79%')
-                    span.star 7.9
-                  span.app__view Action
-                  div.down
-                    a(href='#') Download APK
-
+            include ../../parts/apps-table-small
             div.block-header
               div.block-header__left
                 a.block-header__link(href='#')
@@ -213,24 +140,26 @@ block main
               div.app
                 div.app__left
                   a(href='#')
-                    img(src=require('../../../media/images/icon-app.png'))
+                    img.lazy(
+                      src=require('../../../media/images/loading.gif') srcset='https://lh3.googleusercontent.com/4gbVU7H5-a_qzo0lrj_goQyorGUIFNo7oBzi2zUEqNIldoja15i01Si4tbCHceySsxlv=s70-rw 1x, https://lh3.googleusercontent.com/4gbVU7H5-a_qzo0lrj_goQyorGUIFNo7oBzi2zUEqNIldoja15i01Si4tbCHceySsxlv=s140-rw 2x')
                 div.app__right
                   a(href='#').app__name Ludo King
                   div.stars
-                    span.score(title='Tales of Wind average rating 7.9' style='width:79%')
-                    span.star 7.9
+                    span.stars__score(title='Tales of Wind average rating 7.9' style='width:79%')
+                    span.stars__el 7.9
                   span.app__view Action
                   div.down
                     a(href='#') Download APK
               div.app
                 div.app__left
                   a(href='#')
-                    img(src=require('../../../media/images/icon-app.png'))
+                    img.lazy(
+                      src=require('../../../media/images/loading.gif') srcset='https://lh3.googleusercontent.com/4gbVU7H5-a_qzo0lrj_goQyorGUIFNo7oBzi2zUEqNIldoja15i01Si4tbCHceySsxlv=s70-rw 1x, https://lh3.googleusercontent.com/4gbVU7H5-a_qzo0lrj_goQyorGUIFNo7oBzi2zUEqNIldoja15i01Si4tbCHceySsxlv=s140-rw 2x')
                 div.app__right
                   a(href='#').app__name Sand Balls
                   div.stars
-                    span.score(title='Tales of Wind average rating 6.9' style='width:69%')
-                    span.star 6.9
+                    span.stars__score(title='Tales of Wind average rating 7.9' style='width:79%')
+                    span.stars__el 7.9
                   span.app__view Action
                   div.down
                     a(href='#') Download APK
@@ -244,239 +173,7 @@ block main
                   h2.block-header__title Discover
                 div.block-header__right
                   a.block-header__link(href='#') More &raquo;
-              div.apps-container.is-list
-                div.app
-                  div.app__left
-                    a(href='#')
-                      img(src=require('../../../media/images/app.png'))
-                  div.app__right
-                    a(href='#').app__name Minecraft Earth
-                    span.app__version 2019.1030.04.0
-                    span.app__view Tools
-                    div.down
-                      a(href='#') Download APK
-                div.app
-                  div.app__left
-                    a(href='#')
-                      img(src=require('../../../media/images/app.png'))
-                  div.app__right
-                    a(href='#').app__name Minecraft Earth
-                    span.app__version 2019.1030.04.0
-                    span.app__view Tools
-                    div.down
-                      a(href='#') Download APK
-                div.app
-                  div.app__left
-                    a(href='#')
-                      img(src=require('../../../media/images/app.png'))
-                  div.app__right
-                    a(href='#').app__name Minecraft Earth
-                    span.app__version 2019.1030.04.0
-                    span.app__view Tools
-                    div.down
-                      a(href='#') Download APK
-                div.app
-                  div.app__left
-                    a(href='#')
-                      img(src=require('../../../media/images/app.png'))
-                  div.app__right
-                    a(href='#').app__name Minecraft Earth
-                    span.app__version 2019.1030.04.0
-                    span.app__view Tools
-                    div.down
-                      a(href='#') Download APK
-                div.app
-                  div.app__left
-                    a(href='#')
-                      img(src=require('../../../media/images/app.png'))
-                  div.app__right
-                    a(href='#').app__name Minecraft Earth
-                    span.app__version 2019.1030.04.0
-                    span.app__view Tools
-                    div.down
-                      a(href='#') Download APK
-                div.app
-                  div.app__left
-                    a(href='#')
-                      img(src=require('../../../media/images/app.png'))
-                  div.app__right
-                    a(href='#').app__name Minecraft Earth
-                    span.app__version 2019.1030.04.0
-                    span.app__view Tools
-                    div.down
-                      a(href='#') Download APK
-                div.app
-                  div.app__left
-                    a(href='#')
-                      img(src=require('../../../media/images/app.png'))
-                  div.app__right
-                    a(href='#').app__name Minecraft Earth
-                    span.app__version 2019.1030.04.0
-                    span.app__view Tools
-                    div.down
-                      a(href='#') Download APK
-                div.app
-                  div.app__left
-                    a(href='#')
-                      img(src=require('../../../media/images/app.png'))
-                  div.app__right
-                    a(href='#').app__name Minecraft Earth
-                    span.app__version 2019.1030.04.0
-                    span.app__view Tools
-                    div.down
-                      a(href='#') Download APK
-                div.app
-                  div.app__left
-                    a(href='#')
-                      img(src=require('../../../media/images/app.png'))
-                  div.app__right
-                    a(href='#').app__name Minecraft Earth
-                    span.app__version 2019.1030.04.0
-                    span.app__view Tools
-                    div.down
-                      a(href='#') Download APK
-                div.app
-                  div.app__left
-                    a(href='#')
-                      img(src=require('../../../media/images/app.png'))
-                  div.app__right
-                    a(href='#').app__name Minecraft Earth
-                    span.app__version 2019.1030.04.0
-                    span.app__view Tools
-                    div.down
-                      a(href='#') Download APK
+              include ../../parts/apps-list
               div.block-header
                 h2.block-header__title Popular Apps In Last 24 Hours
-              div.apps-container.is-list
-                div.app
-                  div.label-wrap.is-red
-                    div.label
-                      span 1
-                  div.app__left
-                    a(href='#')
-                      img(src=require('../../../media/images/app.png'))
-                  div.app__right
-                    a(href='#').app__name Minecraft Earth
-                    span.app__version 2019.1030.04.0
-                    span.app__view Tools
-                    div.down
-                      a(href='#') Download APK
-                div.app
-                  div.label-wrap.is-orange
-                    div.label
-                      span 2
-                  div.app__left
-                    a(href='#')
-                      img(src=require('../../../media/images/app.png'))
-                  div.app__right
-                    a(href='#').app__name Minecraft Earth
-                    span.app__version 2019.1030.04.0
-                    span.app__view Tools
-                    div.down
-                      a(href='#') Download APK
-                div.app
-                  div.label-wrap.is-yellow
-                    div.label
-                      span 3
-                  div.app__left
-                    a(href='#')
-                      img(src=require('../../../media/images/app.png'))
-                  div.app__right
-                    a(href='#').app__name Minecraft Earth
-                    span.app__version 2019.1030.04.0
-                    span.app__view Tools
-                    div.down
-                      a(href='#') Download APK
-                div.app
-                  div.label-wrap
-                    div.label
-                      span 4
-                  div.app__left
-                    a(href='#')
-                      img(src=require('../../../media/images/app.png'))
-                  div.app__right
-                    a(href='#').app__name Minecraft Earth
-                    span.app__version 2019.1030.04.0
-                    span.app__view Tools
-                    div.down
-                      a(href='#') Download APK
-                div.app
-                  div.label-wrap
-                    div.label
-                      span 5
-                  div.app__left
-                    a(href='#')
-                      img(src=require('../../../media/images/app.png'))
-                  div.app__right
-                    a(href='#').app__name Minecraft Earth
-                    span.app__version 2019.1030.04.0
-                    span.app__view Tools
-                    div.down
-                      a(href='#') Download APK
-                div.app
-                  div.label-wrap
-                    div.label
-                      span 6
-                  div.app__left
-                    a(href='#')
-                      img(src=require('../../../media/images/app.png'))
-                  div.app__right
-                    a(href='#').app__name Minecraft Earth
-                    span.app__version 2019.1030.04.0
-                    span.app__view Tools
-                    div.down
-                      a(href='#') Download APK
-                div.app
-                  div.label-wrap
-                    div.label
-                      span 7
-                  div.app__left
-                    a(href='#')
-                      img(src=require('../../../media/images/app.png'))
-                  div.app__right
-                    a(href='#').app__name Minecraft Earth
-                    span.app__version 2019.1030.04.0
-                    span.app__view Tools
-                    div.down
-                      a(href='#') Download APK
-                div.app
-                  div.label-wrap
-                    div.label
-                      span 8
-                  div.app__left
-                    a(href='#')
-                      img(src=require('../../../media/images/app.png'))
-                  div.app__right
-                    a(href='#').app__name Minecraft Earth
-                    span.app__version 2019.1030.04.0
-                    span.app__view Tools
-                    div.down
-                      a(href='#') Download APK
-                div.app
-                  div.label-wrap
-                    div.label
-                      span 9
-                  div.app__left
-                    a(href='#')
-                      img(src=require('../../../media/images/app.png'))
-                  div.app__right
-                    a(href='#').app__name Minecraft Earth
-                    span.app__version 2019.1030.04.0
-                    span.app__view Tools
-                    div.down
-                      a(href='#') Download APK
-                div.app
-                  div.label-wrap
-                    div.label
-                      span 10
-                  div.app__left
-                    a(href='#')
-                      img(src=require('../../../media/images/app.png'))
-                  div.app__right
-                    a(href='#').app__name Minecraft Earth
-                    span.app__version 2019.1030.04.0
-                    span.app__view Tools
-                    div.down
-                      a(href='#') Download APK
-                div.apps-container__more
-                  a.btn-transparent More &raquo;
+              include ../../parts/apps-list-label
