@@ -91,7 +91,7 @@ const loaders = [
     ]
   },
   {
-    test: /\.(jpg|png|gif|svg)$/,
+    test: /\.(jpg|png|gif|svg|webp)$/,
     use: [
       IMAGE_LOADER
     ]

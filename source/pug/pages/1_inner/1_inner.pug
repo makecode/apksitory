@@ -22,7 +22,11 @@ block main
           div.section__left
             div.product
               div.product__left
-                img.lazy(src=require('../../../media/images/loading.gif') srcset='https://lh3.googleusercontent.com/4gbVU7H5-a_qzo0lrj_goQyorGUIFNo7oBzi2zUEqNIldoja15i01Si4tbCHceySsxlv=s100-rw 1x, https://lh3.googleusercontent.com/4gbVU7H5-a_qzo0lrj_goQyorGUIFNo7oBzi2zUEqNIldoja15i01Si4tbCHceySsxlv=s200-rw 2x')
+                img.lazy(
+                  src=require('media/images/loading.gif')
+                  data-src=require('media/images/ico-small-100.webp')
+                  data-srcset=`${require('media/images/ico-small-100.webp')} 1x, ${require('media/images/ico-big-200.webp')} 2x`
+                )
               div.product__right
                 h1.product__title HAGO - Play With New Friends
                 span.product__rating <span class='green'>3.4.9</span> for Android
@@ -78,7 +82,10 @@ block main
                         td Name
                         td
                           img.lazy(
-                            src=require('../../../media/images/loading.gif') srcset='https://lh3.googleusercontent.com/4gbVU7H5-a_qzo0lrj_goQyorGUIFNo7oBzi2zUEqNIldoja15i01Si4tbCHceySsxlv=s26-rw 1x, https://lh3.googleusercontent.com/4gbVU7H5-a_qzo0lrj_goQyorGUIFNo7oBzi2zUEqNIldoja15i01Si4tbCHceySsxlv=s52-rw 2x')
+                            src=require('media/images/loading.gif')
+                            data-src=require('media/images/ico-small-26.webp')
+                            data-srcset=`${require('media/images/ico-small-26.webp')} 1x, ${require('media/images/ico-big-52.webp')} 2x`
+                          )
                           | HAGO - Play With New Friends
                     tbody
                       tr.rating
