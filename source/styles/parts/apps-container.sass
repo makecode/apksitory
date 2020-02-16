@@ -9,34 +9,63 @@
       border: none
 
   &.is-table
-
-    .app
-      width: 33.33%
-      border-top: none
-
-      +m($mobile)
-        width: 50%
-      +m(440)
+    .apps-container
+      &__list
         width: 100%
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
 
-      &:nth-child(1),
-      &:nth-child(2),
-      &:nth-child(3)
-        border-top: 1px solid $color-border
+      &__el
+        width: 33.33%
+        border: 1px solid $color-border
+        border-top: none
 
-      &:nth-child(3n-1)
-        border-left: none
+        +m($mobile)
+          width: 50%
 
+        +m(440)
+          width: 100%
 
-      &:nth-child(3n)
-        border-left: none
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3)
+          border-top: 1px solid $color-border
+
+        &:nth-child(3n-1)
+          border-left: none
+
+        &:nth-child(3n)
+          border-left: none
+
+        +m($mobile)
+          &:nth-child(3)
+            border-top: none
+          &:nth-child(3n-1)
+            border-left: 1px solid $color-border
+          &:nth-child(3n)
+            border-left: 1px solid $color-border
+          &:nth-child(even)
+            border-left: none
+
+        +m(440)
+          &:first-child
+            border-bottom: none
+          &:nth-child(even)
+            border-left: 1px solid $color-border
 
   &.is-list
     flex-direction: column
     border: 1px solid $color-border
 
+    .apps-container
+
+      &__el
+        border-bottom: 1px solid $color-border
+        &:last-child
+          border-bottom: none
+
     .app
-      border: none
       border-bottom: 1px solid $color-border
 
       &:last-child

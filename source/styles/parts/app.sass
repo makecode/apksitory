@@ -3,11 +3,6 @@
   display: flex
   flex-wrap: wrap
 
-  .app
-    width: 33.33%
-    +m($mobile)
-      width: 50%
-
 .app
   position: relative
   display: flex
@@ -16,14 +11,13 @@
   background-color: #ffffff
   transition: all .3s ease-in-out
   box-sizing: border-box
-  border: 1px solid $color-border
   cursor: pointer
 
   &:hover
     background-color: #fafafa
 
     .down
-      bottom: 10px
+      bottom: 12px
       transition: all 0.1s ease
 
   &__left

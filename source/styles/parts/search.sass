@@ -71,6 +71,9 @@
       font-weight: 500
       color: #ffffff
 
+      +m($mobile)
+        width: 100px
+
   &.is-mobile
     display: none
     position: fixed
@@ -100,3 +103,7 @@
 
     &.is-open
       transform: translateY(100%)
+      .search__form
+        -webkit-box-shadow: 1px 1px 4px 2px rgba(224,224,224,1)
+        -moz-box-shadow: 1px 1px 4px 2px rgba(224,224,224,1)
+        box-shadow: 1px 1px 4px 2px rgba(224,224,224,1)

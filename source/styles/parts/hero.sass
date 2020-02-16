@@ -4,6 +4,11 @@
   text-align: center
   background: url('../media/images/hero-bg.png')
   background-size: cover
+  background-position: center
+
+  +m($mobile)
+    padding-top: 75px
+    background-image: none
 
   &__wrap
     display: block
@@ -13,6 +18,10 @@
   &__title
     font-size: 46px
     font-weight: 400
+
+    +m($mobile)
+      font-size: 38px
+
 
   &__descr
     margin-top: 15px
