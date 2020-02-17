@@ -24,6 +24,9 @@
   &__left
     margin-right: 30px
 
+    +m($mobile)
+      margin-right: 20px
+
   &__right
     width: calc(100% - 150px)
     position: relative
@@ -44,13 +47,21 @@
     display: inline-block
     font-size: 13px
     color: $text-light
+
     a
       margin-left: 3px
+
+      +m($mobile)
+        font-size: 12px
+
+    +m($mobile)
+      margin-bottom: 10px
 
   .stars
     margin-bottom: 8px
 
   .btn-download
+    margin-bottom: 0
     width: 130px
     height: 26px
     line-height: 26px
@@ -60,10 +71,12 @@
     background-color: #ffffff
     border: 1px solid $bg-green
     transition: all .3s ease-in-out
+
     a
       color: $bg-green
 
     &:hover
       background-color: $bg-green
+
       a
         color: #ffffff
