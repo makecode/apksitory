@@ -35,8 +35,7 @@ input[type='button']
   -moz-appearance: none
   -webkit-appearance: none
 
-.copyright,
-.copy
+.copyright
   font-size: 13px
   font-weight: 300
   color: $text-grey
@@ -46,6 +45,9 @@ input[type='button']
     padding: 30px 0
     display: flex
     border-top: 1px solid $color-border
+
+    +m($mobile)
+      padding: 20px 0
 
 .changelog
   margin-bottom: 20px

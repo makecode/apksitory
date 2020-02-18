@@ -71,6 +71,23 @@
     .search
       margin-bottom: 20px
 
+      .input
+        +m($mobile)
+          height: 35px
+          line-height: 35px
+
+      .btn
+        +m($mobile)
+          font-size: 14px
+          height: 35px
+          line-height: 35px
+
+        +m($mobile)
+          width: 70px
+
+      +m($mobile)
+        margin-bottom: 12px
+
   &.is-terms
     h1
       font-size: 26px
@@ -80,3 +97,4 @@
     height: 100%
     +m($mobile)
       padding-top: 50px
+      padding-bottom: 20px
