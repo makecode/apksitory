@@ -25,6 +25,9 @@
       margin-left: 0
       width: 100%
 
+    +m($mobile)
+      min-width: auto
+
   &__title
     margin-bottom: 15px
     font-size: 26px
@@ -49,6 +52,8 @@
         margin-bottom: 10px
         font-size: 20px
         font-weight: 500
+        +m($mobile)
+          font-size: 17px
 
   &.is-2-inner
     padding-bottom: 50px
@@ -60,7 +65,7 @@
 
     .sorting
       position: relative
-      top: -4pxcontainer
+      top: -4px
 
   &.is-10-inner
     .search
@@ -72,7 +77,6 @@
       font-weight: 400
 
   &.is-error
-    padding-bottom: 0
     height: 100%
     +m($mobile)
       padding-top: 50px

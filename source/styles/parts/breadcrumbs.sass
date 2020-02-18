@@ -1,17 +1,16 @@
-.breadcrumbs-wrap
+.breadcrumbs
   padding: 12px 0
+  word-break: break-word
+
   +m($mobile)
     padding-top: 55px
 
-.breadcrumbs
-  display: flex
-  flex-direction: row
-  flex-wrap: wrap
-  align-items: center
-
-  &__el
+  &__link
+    display: inline
     position: relative
     padding-right: 21px
+    color: $text
+    font-size: 12px
 
     &:after,
     &:before
@@ -24,29 +23,23 @@
 
     &:before
       top: 6px
-      transform: rotate(-45deg)
-
-    &:after
-      bottom: 5px
       transform: rotate(45deg)
 
-    &:last-child
-      padding-right: 0
-      a
-        color: $text-light
-        pointer-events: none
-
-      &:after,
-      &:before
-        display: none
-
-  &__link,
-  &__link:visited
-    color: $text
-    font-size: 12px
+    &:after
+      bottom: 6px
+      transform: rotate(-45deg)
 
     &:hover
       text-decoration: underline
 
-  .icon
-    top: -1px
+    .icon
+      top: -1px
+
+    &:last-child
+      padding-right: 0
+      color: $text-light
+      pointer-events: none
+
+      &:after,
+      &:before
+        display: none

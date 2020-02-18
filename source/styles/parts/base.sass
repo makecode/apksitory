@@ -55,6 +55,7 @@ input[type='button']
 .raiting
 
   &__total
+    margin-top: 5px
     display: block
     color: $link
 
@@ -76,4 +77,41 @@ input[type='button']
 .green
   color: #66bb6a
 
+.rating-box
+  flex: 0 0 220px
+  width: 220px
+  border: 1px solid #dddddd
+  text-align: center
+  display: flex
+  flex-direction: column
+  +m($mobile)
+    display: none
+
+  &__name
+    height: 46px
+    line-height: 46px
+    text-align: center
+    background-color: #f9f9f9
+    border-bottom: 1px solid #dddddd
+    margin: 0
+
+  &__content
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    flex: 1
+    margin: 0
+
+
+  //.rating
+  //  display: none
+  //
+  //  +m($tablet)
+  //    display: table-row
+  //
+  //  .vote
+  //    margin-left: 3px
+  //    position: relative
+  //    top: -2px
 

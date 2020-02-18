@@ -5,14 +5,63 @@
     width: 100%
     display: flex
 
-  &__left
-    margin-right: 15px
-    width: 30.6%
+  &__box
+    display: flex
+    align-items: center
 
     +m($mobile)
+      line-height: 1
+
+    img
+      margin-right: 10px
+      +m($mobile)
+        margin-right: 5px
+
+  &__list
+    border: 1px solid #ddd
+    border-top-width: 0
+    overflow: hidden
+    flex: 1
+    margin-left: 15px
+    +m($mobile)
+      margin-left: 0
+
+  &__el
+    display: flex
+    border-top: 1px solid #ddd
+    line-height: 32px
+    font-size: 13px
+    overflow: hidden
+
+    &:first-child
+      height: 46px
+      line-height: 46px
+    a
+      color: $text
+
+      .icon
+        margin-right: 4px
+
+    &.is-rait
       display: none
 
-  &__right
-    width: 69%
+      +m($tablet)
+        display: flex
+
+  &__name
+    width: 130px
+    flex: 0 0 130px
+    text-align: center
+    background-color: #fafafa
+    display: inline-block
+    border-right: 1px solid #ddd
+    margin-right: 15px
+    font-weight: 500
     +m($mobile)
-      width: 100%
+      margin-right: 10px
+
+  &__descr
+    padding-right: 10px
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap

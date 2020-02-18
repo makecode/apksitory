@@ -6,6 +6,8 @@
   display: flex
   align-items: center
   border-top: 1px solid $color-border
+  +m($mobile)
+    border-top: none
 
   &:after
     position: absolute
@@ -15,11 +17,15 @@
     width: 60px
     height: 60px
     background-image: url('../media/images/protected-shield.png')
+    +m($mobile)
+      right: -21px
 
   &__left
     width: 100px
     height: 100px
     margin-right: 30px
+    +m($mobile)
+      margin-right: 10px
 
   &__right
     width: calc(100% - 130px)
@@ -31,6 +37,9 @@
     overflow: hidden
     text-overflow: ellipsis
     white-space: nowrap
+    +m($mobile)
+      padding-right: 0
+      font-size: 17px
 
   &__rating
     margin: 10px 0

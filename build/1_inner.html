@@ -7,13 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;display=swap" rel="stylesheet">
     <title>Apksitory
     </title>
-  <link href="styles/0.d05352926192db61aa74.css" rel="stylesheet"></head>
+  <link href="styles/0.13b938d48fc3ccc6dcb4.css" rel="stylesheet"></head>
   <body>
-<div class="preloader" id="preloader">
-  <div class="preloader__container"><img class="preloader__logo" src="images/logo-web.be2ed39a9ecd340d8ef6380d853ddb1c.svg"><span class="preloader__progress"><span class="preloader__fill" id="preloaderFill"></span></span>
-    <p class="preloader__persentage" id="preloaderText"></p>
-  </div>
-</div>
+    <!--include ../parts/preloader-->
 <div class="mobile-menu">
   <div class="mobile-menu__top"></div>
   <div class="mobile-menu__bottom">
@@ -64,15 +60,8 @@
   </div>
 </header>
     <main class="main">
-      <div class="breadcrumbs-wrap">
-        <div class="container">
-          <ul class="breadcrumbs">
-            <li class="breadcrumbs__el"><a class="breadcrumbs__link" href="#"><span class="icon icon-breadcumb-home"></span></a></li>
-            <li class="breadcrumbs__el"><a class="breadcrumbs__link" href="#">Apps</a></li>
-            <li class="breadcrumbs__el"><a class="breadcrumbs__link" href="#">Social</a></li>
-            <li class="breadcrumbs__el"><a class="breadcrumbs__link" href="#">HAGO - Play With New Friends</a></li>
-          </ul>
-        </div>
+      <div class="breadcrumbs">
+        <div class="container"><a class="breadcrumbs__link" href="#"><span class="icon icon-breadcumb-home"></span></a><a class="breadcrumbs__link" href="#">Apps</a><a class="breadcrumbs__link" href="#">Social</a><a class="breadcrumbs__link" href="#">HAGO - Play With New Friends</a></div>
       </div>
       <section class="section is-1-inner">
         <div class="container">
@@ -112,59 +101,31 @@
               <div class="technical-info">
                 <h2>Technichal Information</h2>
                 <div class="technical-info__wrap">
-                  <dic class="technical-info__left">
-                    <div class="rate"><span class="rate__title">Rating</span>
-                      <div class="rate__content"><span class="rate__sum">4.3<span>/5</span></span>
-                        <div class="raiting">
-                          <div class="rateit" data-rateit-value="4.3" data-rateit-resetable="false"></div><span class="raiting__total">(2,231 total votes)</span>
-                        </div>
+                  <!--div.technical-info__left-->
+                  <div class="rating-box">
+                    <div class="rating-box__name">Rating</div>
+                    <div class="rating-box__content">
+                      <div class="rate__sum">4.3<span>/5</span></div>
+                      <div class="raiting">
+                        <div class="rateit" data-rateit-value="4.3" data-rateit-resetable="false"></div><span class="raiting__total">(2,231 total votes)</span>
                       </div>
                     </div>
-                  </dic>
-                  <div class="technical-info__right">
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <td>Name</td>
-                          <td><img class="lazy" src="images/loading.56fdc2b453ca325de8b1383ea68f9d04.gif" data-src="images/icon-small-26.e1d12cfb9b669a725de6cb4ff286ff25.png" data-srcset="images/icon-small-26.e1d12cfb9b669a725de6cb4ff286ff25.png 1x, images/icon-big-52.1a87f9f909dbfa48820a6ca6a04ccc66.png 2x">HAGO - Play With New Friends</td>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr class="rating">
-                          <td>Rating</td>
-                          <td><span class="rateit" data-rateit-value="4.3" data-rateit-resetable="false"></span><span class="vote">4.3</span></td>
-                        </tr>
-                        <tr>
-                          <td>Price</td>
-                          <td>Free</td>
-                        </tr>
-                        <tr>
-                          <td>Version</td>
-                          <td>com.twitter.android_8.7.0-release.81</td>
-                        </tr>
-                        <tr>
-                          <td>Requires</td>
-                          <td>Android 4.3+</td>
-                        </tr>
-                        <tr>
-                          <td>Updated</td>
-                          <td>2019-10-31</td>
-                        </tr>
-                        <tr>
-                          <td>Developer</td>
-                          <td>Twitter, Inc.</td>
-                        </tr>
-                        <tr>
-                          <td>Name of Package</td>
-                          <td>com.twitter.android</td>
-                        </tr>
-                        <tr>
-                          <td>Get it on</td>
-                          <td><a href="#"><span class="icon icon-googleplay"></span><span>Google Play</span></a></td>
-                        </tr>
-                      </tbody>
-                    </table>
                   </div>
+                  <ul class="technical-info__list">
+                    <li class="technical-info__el"><span class="technical-info__name">Name</span>
+                      <div class="technical-info__box"><img class="lazy" src="images/loading.56fdc2b453ca325de8b1383ea68f9d04.gif" data-src="images/icon-small-26.e1d12cfb9b669a725de6cb4ff286ff25.png" data-srcset="images/icon-small-26.e1d12cfb9b669a725de6cb4ff286ff25.png 1x, images/icon-big-52.1a87f9f909dbfa48820a6ca6a04ccc66.png 2x"><span>HAGO - Play With New Friends</span></div>
+                    </li>
+                    <li class="technical-info__el is-rait"><span class="technical-info__name">Rating</span>
+                      <div class="technical-info__box"><span class="rateit" data-rateit-value="4.3" data-rateit-resetable="false"></span><span class="vote">4.3</span></div>
+                    </li>
+                    <li class="technical-info__el"><span class="technical-info__name">Price</span><span class="technical-info__descr">Free</span></li>
+                    <li class="technical-info__el"><span class="technical-info__name">Version</span><span class="technical-info__descr">com.twitter.android_8.7.0-release.81</span></li>
+                    <li class="technical-info__el"><span class="technical-info__name">Requires</span><span class="technical-info__descr">Android 4.3+</span></li>
+                    <li class="technical-info__el"><span class="technical-info__name">Updated</span><span class="technical-info__descr">2019-10-31</span></li>
+                    <li class="technical-info__el"><span class="technical-info__name">Developer</span><span class="technical-info__descr">Twitter, Inc.</span></li>
+                    <li class="technical-info__el"><span class="technical-info__name">Name of Package</span><span class="technical-info__descr">com.twitter.android</span></li>
+                    <li class="technical-info__el"><span class="technical-info__name">Get it on</span><a href="#"><span class="icon icon-googleplay"></span><span>Google Play</span></a></li>
+                  </ul>
                 </div>
               </div><a class="btn-download googleplay" href="#"><img src="images/icon-google-play.81ea8223aec21efcb808c618740b20b6.png"></a>
               <!--a(href='#').btn-download-->
@@ -276,7 +237,7 @@
   <ul class="apps-container__list">
     <li class="apps-container__el">
       <div class="app">
-        <div class="app__left"><a href="#"><img class="lazy" src="images/loading.56fdc2b453ca325de8b1383ea68f9d04.gif" srcset="https://lh3.googleusercontent.com/4gbVU7H5-a_qzo0lrj_goQyorGUIFNo7oBzi2zUEqNIldoja15i01Si4tbCHceySsxlv=s70-rw 1x, https://lh3.googleusercontent.com/4gbVU7H5-a_qzo0lrj_goQyorGUIFNo7oBzi2zUEqNIldoja15i01Si4tbCHceySsxlv=s140-rw 2x"></a></div>
+        <div class="app__left"><a href="#"><img class="lazy" src="images/loading.56fdc2b453ca325de8b1383ea68f9d04.gif" data-src="images/ico-small-70.90486d201a00fa34aa8848e495fee6ec.png" data-srcset="images/ico-small-70.90486d201a00fa34aa8848e495fee6ec.png 1x, images/ico-big-140.8fe3f54ea36a25213e9766b40e50cf01.png 2x"></a></div>
         <div class="app__right"><a class="app__name" href="#">Minecraft Earth</a><span class="app__version">2019.1030.04.0</span><span class="app__view">Tools</span>
           <div class="down"><a href="#">Download APK</a></div>
         </div>
@@ -284,7 +245,7 @@
     </li>
     <li class="apps-container__el">
       <div class="app">
-        <div class="app__left"><a href="#"><img class="lazy" src="images/loading.56fdc2b453ca325de8b1383ea68f9d04.gif" srcset="https://lh3.googleusercontent.com/4gbVU7H5-a_qzo0lrj_goQyorGUIFNo7oBzi2zUEqNIldoja15i01Si4tbCHceySsxlv=s70-rw 1x, https://lh3.googleusercontent.com/4gbVU7H5-a_qzo0lrj_goQyorGUIFNo7oBzi2zUEqNIldoja15i01Si4tbCHceySsxlv=s140-rw 2x"></a></div>
+        <div class="app__left"><a href="#"><img class="lazy" src="images/loading.56fdc2b453ca325de8b1383ea68f9d04.gif" data-src="images/ico-small-70.90486d201a00fa34aa8848e495fee6ec.png" data-srcset="images/ico-small-70.90486d201a00fa34aa8848e495fee6ec.png 1x, images/ico-big-140.8fe3f54ea36a25213e9766b40e50cf01.png 2x"></a></div>
         <div class="app__right"><a class="app__name" href="#">Minecraft Earth</a><span class="app__version">2019.1030.04.0</span><span class="app__view">Tools</span>
           <div class="down"><a href="#">Download APK</a></div>
         </div>
@@ -292,7 +253,7 @@
     </li>
     <li class="apps-container__el">
       <div class="app">
-        <div class="app__left"><a href="#"><img class="lazy" src="images/loading.56fdc2b453ca325de8b1383ea68f9d04.gif" srcset="https://lh3.googleusercontent.com/4gbVU7H5-a_qzo0lrj_goQyorGUIFNo7oBzi2zUEqNIldoja15i01Si4tbCHceySsxlv=s70-rw 1x, https://lh3.googleusercontent.com/4gbVU7H5-a_qzo0lrj_goQyorGUIFNo7oBzi2zUEqNIldoja15i01Si4tbCHceySsxlv=s140-rw 2x"></a></div>
+        <div class="app__left"><a href="#"><img class="lazy" src="images/loading.56fdc2b453ca325de8b1383ea68f9d04.gif" data-src="images/ico-small-70.90486d201a00fa34aa8848e495fee6ec.png" data-srcset="images/ico-small-70.90486d201a00fa34aa8848e495fee6ec.png 1x, images/ico-big-140.8fe3f54ea36a25213e9766b40e50cf01.png 2x"></a></div>
         <div class="app__right"><a class="app__name" href="#">Minecraft Earth</a><span class="app__version">2019.1030.04.0</span><span class="app__view">Tools</span>
           <div class="down"><a href="#">Download APK</a></div>
         </div>
@@ -300,7 +261,7 @@
     </li>
     <li class="apps-container__el">
       <div class="app">
-        <div class="app__left"><a href="#"><img class="lazy" src="images/loading.56fdc2b453ca325de8b1383ea68f9d04.gif" srcset="https://lh3.googleusercontent.com/4gbVU7H5-a_qzo0lrj_goQyorGUIFNo7oBzi2zUEqNIldoja15i01Si4tbCHceySsxlv=s70-rw 1x, https://lh3.googleusercontent.com/4gbVU7H5-a_qzo0lrj_goQyorGUIFNo7oBzi2zUEqNIldoja15i01Si4tbCHceySsxlv=s140-rw 2x"></a></div>
+        <div class="app__left"><a href="#"><img class="lazy" src="images/loading.56fdc2b453ca325de8b1383ea68f9d04.gif" data-src="images/ico-small-70.90486d201a00fa34aa8848e495fee6ec.png" data-srcset="images/ico-small-70.90486d201a00fa34aa8848e495fee6ec.png 1x, images/ico-big-140.8fe3f54ea36a25213e9766b40e50cf01.png 2x"></a></div>
         <div class="app__right"><a class="app__name" href="#">Minecraft Earth</a><span class="app__version">2019.1030.04.0</span><span class="app__view">Tools</span>
           <div class="down"><a href="#">Download APK</a></div>
         </div>
@@ -308,7 +269,7 @@
     </li>
     <li class="apps-container__el">
       <div class="app">
-        <div class="app__left"><a href="#"><img class="lazy" src="images/loading.56fdc2b453ca325de8b1383ea68f9d04.gif" srcset="https://lh3.googleusercontent.com/4gbVU7H5-a_qzo0lrj_goQyorGUIFNo7oBzi2zUEqNIldoja15i01Si4tbCHceySsxlv=s70-rw 1x, https://lh3.googleusercontent.com/4gbVU7H5-a_qzo0lrj_goQyorGUIFNo7oBzi2zUEqNIldoja15i01Si4tbCHceySsxlv=s140-rw 2x"></a></div>
+        <div class="app__left"><a href="#"><img class="lazy" src="images/loading.56fdc2b453ca325de8b1383ea68f9d04.gif" data-src="images/ico-small-70.90486d201a00fa34aa8848e495fee6ec.png" data-srcset="images/ico-small-70.90486d201a00fa34aa8848e495fee6ec.png 1x, images/ico-big-140.8fe3f54ea36a25213e9766b40e50cf01.png 2x"></a></div>
         <div class="app__right"><a class="app__name" href="#">Minecraft Earth</a><span class="app__version">2019.1030.04.0</span><span class="app__view">Tools</span>
           <div class="down"><a href="#">Download APK</a></div>
         </div>
@@ -316,7 +277,7 @@
     </li>
     <li class="apps-container__el">
       <div class="app">
-        <div class="app__left"><a href="#"><img class="lazy" src="images/loading.56fdc2b453ca325de8b1383ea68f9d04.gif" srcset="https://lh3.googleusercontent.com/4gbVU7H5-a_qzo0lrj_goQyorGUIFNo7oBzi2zUEqNIldoja15i01Si4tbCHceySsxlv=s70-rw 1x, https://lh3.googleusercontent.com/4gbVU7H5-a_qzo0lrj_goQyorGUIFNo7oBzi2zUEqNIldoja15i01Si4tbCHceySsxlv=s140-rw 2x"></a></div>
+        <div class="app__left"><a href="#"><img class="lazy" src="images/loading.56fdc2b453ca325de8b1383ea68f9d04.gif" data-src="images/ico-small-70.90486d201a00fa34aa8848e495fee6ec.png" data-srcset="images/ico-small-70.90486d201a00fa34aa8848e495fee6ec.png 1x, images/ico-big-140.8fe3f54ea36a25213e9766b40e50cf01.png 2x"></a></div>
         <div class="app__right"><a class="app__name" href="#">Minecraft Earth</a><span class="app__version">2019.1030.04.0</span><span class="app__view">Tools</span>
           <div class="down"><a href="#">Download APK</a></div>
         </div>
@@ -510,5 +471,5 @@
     </div>
   </div>
 </footer>
-  <script type="text/javascript" src="js/commons.d05352926192db61aa74.js"></script><script type="text/javascript" src="js/1_inner.d05352926192db61aa74.js"></script></body>
+  <script type="text/javascript" src="js/commons.13b938d48fc3ccc6dcb4.js"></script><script type="text/javascript" src="js/1_inner.13b938d48fc3ccc6dcb4.js"></script></body>
 </html>
