@@ -1,12 +1,13 @@
 .nav-footer
   display: flex
   flex-wrap: wrap
-  color: $text-grey
+  color: $text
+
   +m($mobile)
     justify-content: center
 
   &__el
-    padding-right: 27px
+    padding-right: 15px
     position: relative
     +m($mobile)
       margin-bottom: 5px
@@ -18,9 +19,9 @@
       position: absolute
       content: ''
       top: 4px
-      right: 13px
+      right: 6px
       width: 1px
-      height: 13px
+      height: 11px
       background-color: #90939f
 
     &:last-child
@@ -28,6 +29,5 @@
         display: none
 
   &__link
-    color: $text-grey
+    color: $text
     font-size: 13px
-    font-weight: 300
