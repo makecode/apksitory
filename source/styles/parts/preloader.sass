@@ -1,8 +1,8 @@
 .preloader
   position: fixed
   overflow: hidden
-  width: 100vw
-  height: 100vh
+  width: 100%
+  height: 100%
   text-align: center
   background-color: white
   z-index: 1000
@@ -11,8 +11,9 @@
     position: absolute
     top: 50%
     left: 50%
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -49%)
     width: 520px
+
     +m($mobile)
       padding: 0 50px
       width: 100%
@@ -22,18 +23,62 @@
     width: 240px
 
   &__progress
-    display: block
-    position: relative
     margin: 30px 0 20px
+    position: relative
     width: 100%
     height: 18px
     background-color: #f7f7f7
 
-  &__fill
-    display: inline-block
-    position: absolute
-    top: 0
-    left: 0
+    .bar
+      content: ""
+      display: inline
+      position: absolute
+      width: 0
+      height: 100%
+      left: 50%
+      text-align: center
+
+      &:nth-child(1)
+        background-color: #66bb6a
+        -webkit-animation: progressbar-loading 3s linear infinite
+        animation: progressbar-loading 3s linear infinite
+
+      &:nth-child(2)
+        -webkit-animation: progressbar-loading 3s linear 1s infinite
+        animation: progressbar-loading 3s linear 1s infinite
+        background-color: #f7f7f7
+
+      &:nth-child(3)
+        background-color: #66bb6a
+        -webkit-animation: progressbar-loading 3s linear 2s infinite
+        animation: progressbar-loading 3s linear 2s infinite
+
+@-webkit-keyframes progressbar-loading
+  from
+    left: 50%
     width: 0
-    height: 100%
-    background-color: $bg-green
+    z-index: 100
+
+  33.3333%
+    left: 0
+    width: 100%
+    z-index: 10
+
+  to
+    left: 0
+    width: 100%
+
+@keyframes progressbar-loading
+  from
+    left: 50%
+    width: 0
+    z-index: 100
+
+  33.3333%
+    left: 0
+    width: 100%
+    z-index: 10
+
+  to
+    left: 0
+    width: 100%

@@ -2,7 +2,7 @@ import LazyLoad from 'vanilla-lazyload';
 
 let timeout = null;
 let progress = 0;
-const interval = 1500;
+const interval = 2000;
 
 const ll = new LazyLoad({
   elements_selector: ".lazy",
@@ -10,7 +10,6 @@ const ll = new LazyLoad({
 
 $( document ).ready(function() {
   const $preLoader = $('#preloader');
-  const $preLoaderFill = $('#preloaderFill');
   const $preLoaderText = $('#preloaderText');
 
   runPreLoader();
@@ -32,20 +31,16 @@ $( document ).ready(function() {
     if (progress < 101) {
       timeout = setInterval(updateProgress, interval / 100);
     }
-
-    $($preLoaderFill).animate({
-      width: '100%'
-    }, 1500);
   }
 
   function updateProgress() {
     if (progress === 100) {
       clearInterval(timeout);
-      $($preLoader).fadeOut(800);
+      $($preLoader).fadeOut(200);
       return;
     }
 
-    progress += 1;
+    progress += 4;
     setPreLoaderText(progress);
   }
 
