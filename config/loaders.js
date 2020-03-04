@@ -48,7 +48,7 @@ const SASS_LOADER = {
 const IMAGE_LOADER = {
   loader: 'file-loader',
   options: {
-    name: 'images/[name].[hash].[ext]'
+    name: 'images/[name].[ext]'
   }
 };
 

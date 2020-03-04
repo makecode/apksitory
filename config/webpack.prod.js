@@ -6,15 +6,15 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const prod = {
   output: {
-    filename: 'js/[name].[hash].js'
+    filename: 'js/[name].js'
   },
 
   devtool: 'source-map',
 
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'styles/[name].[hash].css',
-      chunkFilename: 'styles/[id].[hash].css',
+      filename: 'styles/[name].css',
+      chunkFilename: 'styles/[id].css',
     })
   ]
 }
