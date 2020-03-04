@@ -11,6 +11,9 @@ const ll = new LazyLoad({
 $( document ).ready(function() {
   const $preLoader = $('#preloader');
   const $preLoaderText = $('#preloaderText');
+  const visibleText = 'Show More';
+  const hiddenText = 'Show Less';
+  const $btnScroll = $('#howInstall');
 
   runPreLoader();
 
@@ -47,4 +50,39 @@ $( document ).ready(function() {
   function setPreLoaderText(progress) {
     $($preLoaderText).text(`${progress}%`);
   }
+
+  // Scroll to discussion
+  $btnScroll.on('click',function() {
+    var margin = 10;
+    $('body,html').animate({
+      scrollTop: $('#howToGet').offset().top - margin
+    }, 1000);
+  });
+
+  // describe-button
+  let contentVisible = false;
+
+  const $moreButton = $('#describe-button');
+  const $content = $('#describe .describe__content');
+  const contentHeight = $($content).height();
+
+  $($moreButton).click(function() {
+    $('#describe').toggleClass('is-visible');
+    setContentHeight();
+    $(this).text(contentVisible ? hiddenText : visibleText);
+  });
+
+  function setContentHeight() {
+    if (contentVisible) {
+      $($content).height(200);
+    } else {
+      $($content).height(contentHeight);
+    }
+
+    contentVisible = !contentVisible;
+  }
+
+  // init content height with 200px
+  $($content).height(200);
+
 });
