@@ -1,3 +1,7 @@
+import './../../styles/main.sass';
+
+// libs
+import './rateit.js';
 import LazyLoad from 'vanilla-lazyload';
 
 let timeout = null;

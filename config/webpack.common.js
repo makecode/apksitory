@@ -10,16 +10,7 @@ const PAGES = require('./../pages');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const common = {
-  /**
-   * What happens there?
-   * We need to create multiple pages and each page require to own `entry`.
-   * We get theirs dynamically from `PAGES` variable.
-   */
-  entry: (() => {
-    const entries = {};
-    PAGES.forEach(page => entries[page] = PATHS.source + `/pug/pages/${page}/${page}.js`);
-    return entries;
-  })(),
+  entry: PATHS.source + '/pug/pages/app.js',
 
   output: {
     path: PATHS.build,
@@ -28,19 +19,6 @@ const common = {
 
   module: {
     rules: LOADERS
-  },
-
-  optimization: {
-    splitChunks: {
-      chunks: 'all',
-      cacheGroups: {
-        commons: {
-          name: 'commons',
-          chunks: 'initial',
-          minChunks: 2
-        }
-      }
-    }
   },
 
   resolve: {
@@ -60,7 +38,7 @@ const common = {
   plugins: PAGES.map((page) => new HtmlWebpackPlugin({
     template: PATHS.source + `/pug/pages/${page}/${page}.pug`,
     filename: `${page}.html`,
-    chunks: ['commons', page],
+    chunks: ['commons', 'main'],
     inject: 'body'
   })).concat([
     new webpack.ProvidePlugin({
